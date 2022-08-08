@@ -55,20 +55,7 @@ The option "CALCULATE MAGNETIZATION" is also very important here. If this option
 
 __4. Specificities of SIMS_HD (Hydrodynamic dispersion module)__
 
-This version of SIMS is being developed to explore the problem of two sedimenting spheres that crosses an ordered arrangement of neutrally buoyant spheres, distributed in a 6x6x6 grid in 3D space. This problem was inspired by a paper we have published in 2013 [1] in which we have explored how dipolar interactions break the low Reynolds number kinematic reversibility between two interacting spheres in sedimentation. Understanding how specific mechanisms lead to a symmetry breaking of the particle trajectories is a very important issue regarding the prediction of diffusion coefficients in a non-molecular level. The idea of this version of SIMS is to explore the two particle problem in a context where these particles must cross an arrangement containing passively interacting particles. For this purpose we have implemented the possibility of altering the position in the XY plane where the upper sphere is launched in a staggered distribution like the one presented bellow, where the X mark represents the position where the lower sphere is launched at all realizations. The ___ and | spaces represent the positions in which the upper (denser) sphere is launched. Here, we have 30 ___ spaces and 30 | spaces, with a total of 60 diferrent initial conditions of the system. When the user sets 60 realizations in the configuration file, the solver automatically distributes the upper particle in these 60 different initial positions according to the staggered distribution depicted bellow.  
- ___ ___ ___ ___ ___ 
-|   |   |   |   |   |
- ___ ___ ___ ___ ___ 
-|   |   |   |   |   |
- ___ ___ ___ ___ ___ 
-|   |   | X |   |   |
- ___ ___ ___ ___ ___ 
-|   |   |   |   |   |
- ___ ___ ___ ___ ___ 
-|   |   |   |   |   |
- ___ ___ ___ ___ ___ 
-
-
+This version of SIMS is being developed to explore the problem of two sedimenting spheres that crosses an ordered arrangement of neutrally buoyant spheres, distributed in a 6x6x6 grid in 3D space. This problem was inspired by a paper we have published in 2013 [1] in which we have explored how dipolar interactions break the low Reynolds number kinematic reversibility between two interacting spheres in sedimentation. Understanding how specific mechanisms lead to a symmetry breaking of the particle trajectories is a very important issue regarding the prediction of diffusion coefficients in a non-molecular level. The idea of this version of SIMS is to explore the two particle problem in a context where these particles must cross an arrangement containing passively interacting particles. For this purpose we have implemented the possibility of altering the position in the XY plane where the upper sphere is launched in a staggered distribution with a total of 60 diferrent initial conditions of the system. When the user sets 60 realizations in the configuration file, the solver automatically distributes the upper particle in these 60 different initial positions according to a staggered distribution. Interesting features of these version are: automatic creation of a reversibility diagram with 60 points, computation of a mean square displacement of the sedimenting particles, a mean sedimentation time and an equivalent hydrodynamic diffusion coefficient in the form of a final simulation report displayed in the terminal at the end of the simulation.
 
 
 __5. References__
