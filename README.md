@@ -55,27 +55,43 @@ The option "CALCULATE MAGNETIZATION" is also very important here. If this option
 
 __4. Specificities of SIMS_HD (Hydrodynamic dispersion module)__
 
-In the problem of exploring
+This version of SIMS is being developed to explore the problem of two sedimenting spheres that crosses an ordered arrangement of neutrally buoyant spheres, distributed in a 6x6x6 grid in 3D space. This problem was inspired by a paper we have published in 2013 [1] in which we have explored how dipolar interactions break the low Reynolds number kinematic reversibility between two interacting spheres in sedimentation. Understanding how specific mechanisms lead to a symmetry breaking of the particle trajectories is a very important issue regarding the prediction of diffusion coefficients in a non-molecular level. The idea of this version of SIMS is to explore the two particle problem in a context where these particles must cross an arrangement containing passively interacting particles. For this purpose we have implemented the possibility of altering the position in the XY plane where the upper sphere is launched in a staggered distribution like the one presented bellow, where the X mark represents the position where the lower sphere is launched at all realizations. The ___ and | spaces represent the positions in which the upper (denser) sphere is launched. Here, we have 30 ___ spaces and 30 | spaces, with a total of 60 diferrent initial conditions of the system. When the user sets 60 realizations in the configuration file, the solver automatically distributes the upper particle in these 60 different initial positions according to the staggered distribution depicted bellow.  
+ ___ ___ ___ ___ ___ 
+|   |   |   |   |   |
+ ___ ___ ___ ___ ___ 
+|   |   |   |   |   |
+ ___ ___ ___ ___ ___ 
+|   |   | X |   |   |
+ ___ ___ ___ ___ ___ 
+|   |   |   |   |   |
+ ___ ___ ___ ___ ___ 
+|   |   |   |   |   |
+ ___ ___ ___ ___ ___ 
+
+
 
 
 __5. References__
 
 For more information regarding the mathematical formulation used in SIMS, examples and a better physical interpretation of the dimensionless parameters mentioned above, please consult the following references.
 
-- GONTIJO, R.G.; CUNHA, F.R. . Dynamic numerical simulations of magnetically interacting suspensions in creeping flow. Powder Technology (Print), v. 279, p. 146-165, 2015.
 
-- GONTIJO, R.G.; Malvar, S. ; CUNHA, F.R. . Magnetic particulate suspensions from the perspective of a dynamical system. Powder Technology (Print), v. 297, p. 165-182, 2016.
+[1] CUNHA, F.R. ; GONTIJO, R.G. ; SOBRAL, Y.D. . Symmetry breaking of particle trajectories due to magnetic interactions in a dilute suspension. Journal of Magnetism and Magnetic Materials, v. 326, p. 240-250, 2013.
 
-- GONTIJO, R.G.. A numerical perspective on the relation between particle rotational inertia and the equilibrium magnetization of a ferrofluid. Journal of Magnetism and Magnetic Materials, v. 434, p. 91-99, 2017.
+[2] GONTIJO, R.G.; CUNHA, F.R. . Dynamic numerical simulations of magnetically interacting suspensions in creeping flow. Powder Technology (Print), v. 279, p. 146-165, 2015.
 
-- Gontijo, R. G.; CUNHA, F. R. . Numerical simulations of magnetic suspensions with hydrodynamic and dipole-dipole magnetic interactions. PHYSICS OF FLUIDS, v. 29, p. 062004, 2017.
+[3] GONTIJO, R.G.; Malvar, S. ; CUNHA, F.R. . Magnetic particulate suspensions from the perspective of a dynamical system. Powder Technology (Print), v. 297, p. 165-182, 2016.
 
-- GONTIJO, R.G.; Malvar, S. . Microstructural transition in an ordered set of magnetic spheres immersed in a carrier liquid. Mechanics Research Communications, v. 83, p. 12-17, 2017.
+[4] GONTIJO, R.G.. A numerical perspective on the relation between particle rotational inertia and the equilibrium magnetization of a ferrofluid. Journal of Magnetism and Magnetic Materials, v. 434, p. 91-99, 2017.
 
-- GONTIJO, R.G.. Heat transfer increase for a laminar pipe flow of a magnetic fluid subjected to constant heat flux: an initial theoretical approach. MECHANICS RESEARCH COMMUNICATIONS, v. 91, p. 27-32, 2018.
+[5] Gontijo, R. G.; CUNHA, F. R. . Numerical simulations of magnetic suspensions with hydrodynamic and dipole-dipole magnetic interactions. PHYSICS OF FLUIDS, v. 29, p. 062004, 2017.
 
-- DE CARVALHO, D D ; GONTIJO, R G . Reconstructing a continuous magnetization field based on local vorticity cells, CFD and Langevin dynamics: a new numerical scheme. JOURNAL OF MAGNETISM AND MAGNETIC MATERIALS, v. 514, p. 167135, 2020.
+[6] GONTIJO, R.G.; Malvar, S. . Microstructural transition in an ordered set of magnetic spheres immersed in a carrier liquid. Mechanics Research Communications, v. 83, p. 12-17, 2017.
 
-- GUIMARÃES, A. B. ; CUNHA, F. R. ; Gontijo, R. G. . The influence of hydrodynamic effects on the complex susceptibility response of magnetic fluids undergoing oscillatory fields: New insights for magnetic hyperthermia. PHYSICS OF FLUIDS, v. 32, p. 012008-012008-17, 2020.
+[7] GONTIJO, R.G.. Heat transfer increase for a laminar pipe flow of a magnetic fluid subjected to constant heat flux: an initial theoretical approach. MECHANICS RESEARCH COMMUNICATIONS, v. 91, p. 27-32, 2018.
+
+[8] DE CARVALHO, D D ; GONTIJO, R G . Reconstructing a continuous magnetization field based on local vorticity cells, CFD and Langevin dynamics: a new numerical scheme. JOURNAL OF MAGNETISM AND MAGNETIC MATERIALS, v. 514, p. 167135, 2020.
+
+[9] GUIMARÃES, A. B. ; CUNHA, F. R. ; Gontijo, R. G. . The influence of hydrodynamic effects on the complex susceptibility response of magnetic fluids undergoing oscillatory fields: New insights for magnetic hyperthermia. PHYSICS OF FLUIDS, v. 32, p. 012008-012008-17, 2020.
 
 Prof. Rafael Gabler Gontijo, PhD
