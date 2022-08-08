@@ -1,0 +1,72 @@
+***********************************************
+*                                             *
+*                                             *
+*       SIMS:  SIMULATION DATA FILE           *
+*         CODE BY: RAFAEL GABLER              *
+*                                             *
+*                                             *
+***********************************************
+
+- LOGICAL VARIABLES
+
+ STATISTICAL ANALYSIS...................: TRUE
+ SOLVE TORQUE EQUATION..................: TRUE
+ RECORD POSITION IN FILE................: TRUE
+ RECORD VELOCITY IN FILE................: TRUE
+ STATIC SIMULATION (MONTE CARLO)........: FALSE
+ ORDERED (T) OR RANDOM (F) ARRANGEMENT..: TRUE
+ APPLY AN EXTERNAL MAGNETIC FIELD.......: FALSE
+ SEDIMENTATION..........................: FALSE
+ FLUIDIZED BED MODEL....................: FALSE
+ MIX MAGNETIC AND NON MAGNETIC PARTICLES: FALSE
+ RECORD DIPOLE IN FILE..................: TRUE
+ BROWNIAN MOTION........................: FALSE
+ CALCULATE MAGNETIZATION................: FALSE
+ PERIODIC MAGNETIC TORQUES..............: FALSE
+ PERIODIC MAGNETIC FORCES...............: FALSE
+ ACCOUNT HYDRODYNAMIC INTERACTIONS......: TRUE
+ CALCULATE THE STRUCTURE FACTOR.........: FALSE
+ TURN ON SHEAR RATE.....................: FALSE
+ OSCILLATORY SHEAR......................: FALSE
+ INITIAL SPHERICAL AGGREGATE............: FALSE
+ ORDERED DIPOLES........................: FALSE
+ CONTINUE AN OLD SIMULATION.............: FALSE
+ POLIDISPERSITY.........................: FALSE
+ PRINT LOCAL MAPS OF PHI................: FALSE
+ OSCILLATORY FIELD......................: FALSE
+ PARTICLE INERTIA.......................: FALSE
+ ROTATING FIELD.........................: FALSE
+ GREEN-KUBO FOR THERMAL CONDUCTIVITY....: FALSE	 
+
+- PARTICLE DISTRIBUTION DATA
+
+ VOLUME FRACTION OF PARTICLES...........: 1.0000E-01
+ BOX ASPECT RATIO.......................: 00001
+ NUMBER OF PHYSICAL LATTICES............: 00125
+ NUMBER OF RECIPROCAL LATTICES..........: 00125
+ PERCENTAGE OF NON-MAGNETIC PARTICLES...: 5.0000E-01
+
+- SIMULATION QUANTITIES
+
+ NUMBER OF PARTICLES....................: 00218
+ NUMBER OF REALIZATIONS.................: 00060
+
+- PHYSICAL DIMENSIONLESS PARAMETERS
+
+ LAMBDA ................................: 0.0000E+00
+ ALPHA .................................: 0.0000E+00
+ BROWNIAN PECLET NUMBER.................: 1.0000E+00
+ ROTATIONAL STOKES NUMBER...............: 1.0000E-02
+ TRANSLATIONAL STOKES NUMBER............: 1.0000E-01
+ DIMENSIONLESS SHEAR RATE...............: 0.0000E+00
+ FREQUENCY FOR THE OSCILLATORY SHEAR....: 0.0000E+00
+ FREQUENCY FOR THE OSCILLATORY FIELD....: 0.0000E+00
+ DENSITY RATIO (TWO PARTICLE PROBLEM)...: 1.5000E+00
+ POSITION OF THE EXTERNAL FIELD.........: 00002
+
+- NUMERICAL DATA
+
+ SIMULATION TIME........................: 8.0000E+2
+ STEP FOR STORING THE RESULTS...........: 0002
+0
+ CONTINUE FROM ITERACTION NUMBER........: 10000
